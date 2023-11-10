@@ -1,4 +1,4 @@
-# Designing and Building Scalable Web Applications / Course Project I Template
+# Grader API - 408a48ab-ea00-402b-a784-8e143fc94aaa
 
 Provides an endpoint for grading programming assignments. Has the functionality
 needed to create a grader image based on `grader-image` and to copy source code

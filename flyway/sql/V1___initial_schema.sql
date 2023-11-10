@@ -19,8 +19,8 @@ CREATE TABLE programming_assignment_submissions (
   last_updated TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-CREATE INDEX pas_code_pa_id_idx ON
+CREATE INDEX pas_code_pa_id_idx ON 
   programming_assignment_submissions (code, programming_assignment_id);
 
-CREATE INDEX pas_user_uuid_pa_id_idx ON
+CREATE INDEX pas_user_uuid_pa_id_idx ON 
   programming_assignment_submissions (user_uuid, programming_assignment_id);
