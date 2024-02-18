@@ -6,4 +6,6 @@ WORKDIR /e2e-playwright
 
 RUN npm install
 
+RUN npx playwright install --with-deps chromium
+
 CMD [ "npx", "playwright", "test", "--reporter=list" ]

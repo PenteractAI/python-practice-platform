@@ -1,6 +1,7 @@
 FROM alpine:3.16
 
-RUN apk add bash
+#RUN apk add bash
+RUN apk add --no-cache bash
 RUN apk add python3 py3-pip
 
 WORKDIR /app
@@ -17,4 +18,4 @@ RUN chown -R user:users /app
 
 USER user
 
-CMD ["./grade.sh"]
+CMD sh ./grade.sh

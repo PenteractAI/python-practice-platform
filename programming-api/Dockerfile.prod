@@ -17,4 +17,4 @@ RUN deno cache deps.js
 
 COPY . .
 
-CMD ["sh", "-c", "dockerize -wait tcp://database:5432 -timeout 60s && deno run --unstable --watch --allow-net --allow-read --allow-env app.js"]
+CMD ["sh", "-c", "dockerize -wait tcp://database:5432 -timeout 60s && deno run --unstable --allow-net --allow-env app.js"]

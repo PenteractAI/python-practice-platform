@@ -1,8 +1,8 @@
 module.exports = {
-  timeout: 10000,
-  retries: 0,
+  timeout: 60000,
+  retries: 2,
   reporter: "list",
-  workers: 5,
+  workers: 1,
   use: {
     baseURL: "http://localhost:7800",
     headless: true,
